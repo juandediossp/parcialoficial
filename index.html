@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Ep 1</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #dfc7df;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #d10a35;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #333; /* Color de fondo oscuro */
+            overflow: hidden;
+        }
+
+        /* Enlaces del navbar */
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff; /* Color de texto blanco */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin-right: 20px; /* Añadir margen derecho */
+        }
+
+        /* Cambiar color al pasar el ratón por encima del enlace */
+        .navbar a:hover {
+            background-color: #ddd; /* Color de fondo gris claro al pasar el ratón */
+            color: #333; /* Cambiar el color del texto al pasar el ratón */
+        }
+
+        /* Contenedor principal */
+        .container {
+            background-color: #ffffffd8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            position: relative; /* Para posicionar la burbuja de WhatsApp */
+        }
+
+        /* Imagen */
+        .contenedor-imagen {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espacio entre las imágenes */
+            margin-top: 20px;
+        }
+        
+        .travel-image {
+            width: 200px;  /* Puedes ajustar el tamaño según tus necesidades */
+            height: 200px;
+            border-radius: 10px; /* Para esquinas redondeadas */
+            transition: transform 0.3s; /* Animación suave para el efecto hover */
+            cursor: pointer;
+        }
+        .travel-image:hover {
+            transform: scale(1.1); /* Efecto de hover para agrandar la imagen */
+        }
+
+        /* Listas */
+        ol {
+            padding-left: 20px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333333;
+            color: #fff;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        /* WhatsApp bubble */
+        .whatsapp-bubble {
+            position: fixed;
+            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+            right: 20px; /* Ajusta la distancia desde la parte derecha */
+            z-index: 9999; /* Asegura que esté encima de otros elementos */
+        }
+
+        .whatsapp-bubble img {
+            width: 40px; /* Ajusta el tamaño de la imagen de WhatsApp */
+            height: auto; /* Mantén la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="navbar">
+    
+        <a href="index.html">Inicio</a>
+        <a href="informacion.html">Información</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+<header>
+    <h1>Trayectoria, Pasión y Éxito</h1>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Un poco de mí</h2>
+        <ol>
+            <li>Mi nombre es Juan De Dios Fernandez Hermitaño</li> 
+            <li>Vivo en Chorillos - Santa Isabel</li>
+            <li>Tengo 21 años</li>
+            <li>Trabajo en un Centro de Comida Rápida muy popular</li>
+        </ol>
+        <div class="image-gallery">
+            <img class="travel-image" src="img/character.webp" alt="">
+            <img class="travel-image" src="img/Distriro-de-Chorrillos-2.jpg" alt="">
+            <img class="travel-image" src="img/21 años.jpg" alt="">
+        </div>
+    </section>
+    
+    <section>
+        <h2>Mis intereses y gustos</h2>
+        <ol>
+            <li>La Programación</li>
+            <li>El Diseño Web</li>
+            <li>Pasar tiempo con mi familia</li>
+            <li>Me gusta escuchar música la mayor parte del tiempo</li>
+        </ol>
+    </section>
+    <div class="image-gallery">
+        <img class="travel-image" src="img/programacion.jpg" alt="">
+        <img class="travel-image" src="img/diseño web.png" alt="">
+        <img class="travel-image" src="img/musica.png" alt="">
+    </div>
+
+    <section>
+        <h2>Aquí de 3 a 5 años</h2>
+        <ol>
+            <li>Me veo con la carrera técnica terminada</li>
+            <li>Con un auto nuevo</li>
+            <li>Trabajando en una empresa extranjera</li>
+            <li>Con salud y mi familia completa</li>
+        </ol>
+        <div class="image-gallery">
+            <img class="travel-image" src="img/elantra.jpg" alt="">
+            <img class="travel-image" src="img/empresa.jpg" alt="">
+            <img class="travel-image" src="img/corazon.png" alt="">
+        </div>
+    </section>
+</div>
+
+<!-- WhatsApp bubble -->
+<div class="whatsapp-bubble">
+    <a href="https://web.whatsapp.com/send/?phone=994170231&text&type=phone_number&app_absent=0" target="_blank">
+        <img src="img/wsp.png" alt="WhatsApp">
+    </a>
+</div>
+
+<footer>
+    <p>Derechos de autor © 2024 Mi Empresa. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
